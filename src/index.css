@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+html, body {
+  background: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  background: #000000;
+  min-height: 100vh;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #000000 inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  caret-color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  transition: background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s;
+}
+
+/* shared base for all stat tiles */
+.lcBox {
+  background: #0d1413;
+  border: 1px solid #152524;
+  border-radius: 12px;
+  padding: 16px 20px;
+  color: #f1f5f4;
+}
+
+/* featured variant — the "Total solved" tile with teal glow */
+.lcBox--featured {
+  background:
+    linear-gradient(135deg, rgba(45, 212, 191, 0.10), transparent 55%),
+    #0d1413;
+  border-color: rgba(45, 212, 191, 0.40);
+}
+
+/* label inside tile */
+.lcBox__label {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #7a8481;
+  font-weight: 500;
+}
+
+/* value inside tile */
+.lcBox__value {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 6px;
+  letter-spacing: -0.5px;
+}
+.lcBox__value .suffix {
+  font-size: 13px;
+  color: #7a8481;
+  font-weight: 500;
+}

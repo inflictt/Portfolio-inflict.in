@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" width="340" height="306">
+  <!-- Shadow -->
+  <ellipse cx="100" cy="155" rx="45" ry="5" fill="#5dcaa5" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="rx" values="45;50;45" dur="3s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Sprite group — hop -->
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+      values="0,0; 0,0; 0,-12; 0,0; 0,-6; 0,0; 0,0"
+      keyTimes="0; 0.6; 0.7; 0.8; 0.85; 0.9; 1"
+      dur="4s" repeatCount="indefinite"/>
+
+    <g shape-rendering="crispEdges">
+      <!-- head -->
+      <rect x="70"  y="10"  width="60"  height="10" fill="#5dcaa5"/>
+      <rect x="60"  y="20"  width="80"  height="10" fill="#5dcaa5"/>
+      <rect x="50"  y="30"  width="100" height="40" fill="#5dcaa5"/>
+
+      <!-- Eyes: LEFT -->
+      <rect x="60" y="40" width="10" height="10" fill="#0a0a0a">
+        <animate attributeName="opacity" calcMode="discrete"
+          values="1;0;0;0;0" keyTimes="0;0.25;0.5;0.75;1" dur="3.2s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="110" y="40" width="10" height="10" fill="#0a0a0a">
+        <animate attributeName="opacity" calcMode="discrete"
+          values="1;0;0;0;0" keyTimes="0;0.25;0.5;0.75;1" dur="3.2s" repeatCount="indefinite"/>
+      </rect>
+
+      <!-- Eyes: CENTER -->
+      <rect x="70" y="40" width="10" height="10" fill="#0a0a0a">
+        <animate attributeName="opacity" calcMode="discrete"
+          values="0;1;0;1;0" keyTimes="0;0.25;0.5;0.75;1" dur="3.2s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="120" y="40" width="10" height="10" fill="#0a0a0a">
+        <animate attributeName="opacity" calcMode="discrete"
+          values="0;1;0;1;0" keyTimes="0;0.25;0.5;0.75;1" dur="3.2s" repeatCount="indefinite"/>
+      </rect>
+
+      <!-- Eyes: RIGHT -->
+      <rect x="80" y="40" width="10" height="10" fill="#0a0a0a">
+        <animate attributeName="opacity" calcMode="discrete"
+          values="0;0;1;0;0" keyTimes="0;0.25;0.5;0.75;1" dur="3.2s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="130" y="40" width="10" height="10" fill="#0a0a0a">
+        <animate attributeName="opacity" calcMode="discrete"
+          values="0;0;1;0;0" keyTimes="0;0.25;0.5;0.75;1" dur="3.2s" repeatCount="indefinite"/>
+      </rect>
+
+      <!-- Blink cover -->
+      <rect x="60" y="40" width="30" height="10" fill="#5dcaa5">
+        <animate attributeName="opacity" calcMode="discrete"
+          values="0;0;0;1;0" keyTimes="0;0.8;0.93;0.96;1" dur="5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="110" y="40" width="30" height="10" fill="#5dcaa5">
+        <animate attributeName="opacity" calcMode="discrete"
+          values="0;0;0;1;0" keyTimes="0;0.8;0.93;0.96;1" dur="5s" repeatCount="indefinite"/>
+      </rect>
+
+      <!-- Mouth -->
+      <rect x="80" y="60" width="40" height="10" fill="#0a0a0a">
+        <animate attributeName="opacity" calcMode="discrete"
+          values="1;0;1" keyTimes="0;0.5;1" dur="1.6s" repeatCount="indefinite"/>
+      </rect>
+
+      <!-- Head bottom -->
+      <rect x="60"  y="70"  width="80"  height="10" fill="#5dcaa5"/>
+
+      <!-- Neck -->
+      <rect x="70"  y="80"  width="60"  height="10" fill="#1d9e75"/>
+      <rect x="80"  y="90"  width="40"  height="10" fill="#1d9e75"/>
+
+      <!-- Body -->
+      <rect x="50"  y="100" width="100" height="30" fill="#0f6e56"/>
+      <rect x="40"  y="110" width="10"  height="20" fill="#0f6e56"/>
+      <rect x="150" y="110" width="10"  height="20" fill="#0f6e56"/>
+    </g>
+  </g>
+</svg>

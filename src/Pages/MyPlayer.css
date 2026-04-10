@@ -1,0 +1,73 @@
+.mini-player-wrap {
+  width: 400px;
+}
+
+.mini-player-wrap .rhap_container {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 10px 14px;
+  box-shadow: none;
+  font-family: inherit;
+  gap: 6px;
+}
+
+.now-playing-label {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #2dd4bf;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.track-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.2;
+}
+.track-artist {
+  font-size: 11px;
+  color: #888;
+  line-height: 1.2;
+}
+
+.mini-player-wrap .rhap_progress-filled,
+.mini-player-wrap .rhap_progress-indicator {
+  background: #2dd4bf !important;
+}
+.mini-player-wrap .rhap_progress-indicator {
+  width: 10px;
+  height: 10px;
+  top: -3px;
+  margin-left: -5px;
+  box-shadow: 0 0 6px rgba(45, 212, 191, 0.6);
+}
+.mini-player-wrap .rhap_progress-bar {
+  background: rgba(255, 255, 255, 0.1);
+  height: 4px;
+}
+
+.mini-player-wrap .rhap_main-controls-button,
+.mini-player-wrap .rhap_repeat-button {
+  color: #888;
+  width: 20px;
+  height: 20px;
+}
+.mini-player-wrap .rhap_play-pause-button {
+  color: #2dd4bf !important;
+  width: 32px;
+  height: 32px;
+  filter: drop-shadow(0 0 6px rgba(45, 212, 191, 0.4));
+}
+
+.mini-player-wrap .rhap_time {
+  color: #888;
+  font-size: 10px;
+}
+
+.mini-player-wrap .rhap_progress-section {
+  margin-top: 6px;
+}
+.mini-player-wrap .rhap_controls-section {
+  margin-top: 4px;
+}
