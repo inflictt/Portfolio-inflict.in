@@ -6,12 +6,15 @@
 
 A modern, animated personal portfolio built with React 19, Vite, and Tailwind CSS v4 — featuring GSAP scroll animations, live GitHub & LeetCode stats, and an EmailJS-powered contact form.
 
+🌐 **Live at [inflict.in](https://inflict.in)**
+
 [![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white)](https://gsap.com/)
+[![Vercel](https://img.shields.io/badge/Deployed_on_Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 
-[Live Demo](#) · [Report Bug](https://github.com/inflictt/Portfolio-inflict.in/issues) · [Request Feature](https://github.com/inflictt/Portfolio-inflict.in/issues)
+[Live Site](https://inflict.in) · [Report Bug](https://github.com/inflictt/Portfolio-inflict.in/issues) · [Request Feature](https://github.com/inflictt/Portfolio-inflict.in/issues)
 
 </div>
 
@@ -25,9 +28,11 @@ A modern, animated personal portfolio built with React 19, Vite, and Tailwind CS
 - 🎞️ **Tech stack marquee** — smooth infinite scroll of all my tools
 - 📊 **Live GitHub contributions graph** via `react-github-calendar`
 - 💻 **Live LeetCode stats** (Total Solved, Acceptance, Global Rank, Difficulty breakdown)
-- 📧 **Contact form** with `react-hook-form` validation + EmailJS integration, loading and success states
+- 📧 **Contact form** with `react-hook-form` validation + EmailJS integration, including loading and success states
+- 📄 **One-click resume download** directly from the hero section
 - 🧭 **React Router v7** with clean routing setup
-- 📱 **Responsive design**
+- 📱 **Fully responsive** across mobile, tablet, and desktop
+- 🌐 **Custom domain** (`inflict.in`) deployed on Vercel with auto-deploys on every push
 
 ---
 
@@ -51,6 +56,9 @@ A modern, animated personal portfolio built with React 19, Vite, and Tailwind CS
 - @uiw/react-heat-map — Heatmap visualizations
 - react-hook-form — Form validation
 
+**Deployment**
+- Vercel (with custom domain via Hostinger DNS)
+
 **Tools**
 - ESLint
 - Git & GitHub
@@ -62,37 +70,39 @@ A modern, animated personal portfolio built with React 19, Vite, and Tailwind CS
 ```
 Portfolio-Inflict/
 ├── public/
+│   ├── favicon.png                  # Custom pixel-sprite favicon (transparent bg)
 │   ├── favicon.svg
-│   └── icons.svg
+│   ├── icons.svg
+│   └── SAKSHAM_LODHA_RESUME.pdf     # Resume served at /SAKSHAM_LODHA_RESUME.pdf
 ├── src/
-│   ├── assets/              # Images, SVGs, sprites
-│   ├── components/
-│   │   ├── Cursor.jsx       # Custom cursor
+│   ├── assets/                      # Images, SVGs, sprites
+│   ├── components/                  # Reusable shared components
+│   │   ├── Cursor.jsx               # Custom cursor
 │   │   ├── Footer.jsx
-│   │   ├── Github.jsx       # GitHub contributions graph
-│   │   ├── Header.jsx       # Nav bar
-│   │   ├── Leetcode.jsx     # LeetCode stats
-│   │   └── Snowfall.jsx
+│   │   ├── Github.jsx               # GitHub contributions graph
+│   │   ├── Header.jsx               # Nav bar
+│   │   ├── Leetcode.jsx             # LeetCode stats
+│   │   ├── Snowfall.jsx
+│   │   └── TechMarquee.jsx          # Scrolling tech stack
 │   ├── layout/
-│   │   └── RootLayout.jsx   # Snowfall + Header + Outlet + Footer
-│   ├── Pages/
-│   │   ├── Home.jsx         # Hero with GSAP sprite animation
-│   │   ├── About.jsx        # Bio with scroll-scrub pic animation
-│   │   ├── Portfolio.jsx    # Main page composing all sections
-│   │   ├── TechMarquee.jsx  # Scrolling tech stack
-│   │   ├── Grind.jsx        # Wraps GitHub + LeetCode components
-│   │   ├── Contact.jsx      # EmailJS form
-│   │   ├── Projects.jsx     # ⚠️ placeholder
-│   │   ├── Achievements.jsx # ⚠️ placeholder
-│   │   ├── Blogs.jsx        # ⚠️ empty stub
-│   │   ├── BlogOverview.jsx # ⚠️ placeholder
-│   │   ├── MyPlayer.jsx     # Custom audio player
+│   │   └── RootLayout.jsx           # Snowfall + Header + Outlet + Footer
+│   ├── Pages/                       # Page sections composed in Portfolio.jsx
+│   │   ├── Home.jsx                 # Hero with GSAP sprite animation
+│   │   ├── About.jsx                # Bio with scroll-scrub pic animation
+│   │   ├── Portfolio.jsx            # Main page composing all sections
+│   │   ├── Grind.jsx                # Wraps GitHub + LeetCode components
+│   │   ├── Contact.jsx              # EmailJS form
+│   │   ├── Projects.jsx             # ⚠️ placeholder (in progress)
+│   │   ├── Achievements.jsx         # ⚠️ placeholder (in progress)
+│   │   ├── Blogs.jsx                # ⚠️ empty stub (planned)
+│   │   ├── BlogOverview.jsx         # ⚠️ placeholder (planned)
+│   │   ├── MyPlayer.jsx             # Custom audio player
 │   │   └── MyPlayer.css
 │   ├── router/
-│   │   └── Router.jsx       # Routes: / and /blogs
-│   ├── index.css            # Tailwind + global styles + LeetCode tile styles
+│   │   └── Router.jsx               # Routes: / and /blogs
+│   ├── index.css                    # Tailwind + global styles + LeetCode tile styles
 │   └── main.jsx
-├── .env                     # (not committed)
+├── .env                             # (not committed)
 ├── .gitignore
 ├── index.html
 ├── package.json
@@ -150,12 +160,27 @@ npm run preview
 
 ---
 
+## 🌐 Deployment
+
+This site is deployed on **[Vercel](https://vercel.com/)** with the custom domain `inflict.in` connected via DNS records on Hostinger.
+
+Every push to the `main` branch automatically triggers a new production deploy — no manual steps required.
+
+---
+
 ## 🗺️ Roadmap
 
+- [x] Build the responsive Hero, About, Grind, and Contact sections
+- [x] Integrate live GitHub and LeetCode stats
+- [x] Wire up EmailJS-powered contact form
+- [x] Deploy on Vercel with `inflict.in` custom domain
+- [x] Attach resume PDF to the Resume button
+- [x] Custom transparent favicon
 - [ ] Build out **Projects** page with project cards
 - [ ] Build out **Achievements** page
 - [ ] Write and publish **Blogs** (`Blogs.jsx` + `BlogOverview.jsx`)
 - [ ] Add **Dark / Light mode toggle**
+- [ ] Semantic HTML and accessibility pass
 
 ---
 
@@ -163,10 +188,11 @@ npm run preview
 
 **Saksham Lodha**
 
-- GitHub: [@inflictt](https://github.com/inflictt)
-- Twitter / X: [@Saksham1172975](https://x.com/Saksham1172975)
-- LinkedIn: [sakshamlodha](https://www.linkedin.com/in/sakshamlodha)
-- Email: realsaksham06@gmail.com
+- 🌐 Portfolio: [inflict.in](https://inflict.in)
+- 💻 GitHub: [@inflictt](https://github.com/inflictt)
+- 🐦 Twitter / X: [@Saksham1172975](https://x.com/Saksham1172975)
+- 💼 LinkedIn: [sakshamlodha](https://www.linkedin.com/in/sakshamlodha)
+- 📧 Email: realsaksham06@gmail.com
 
 ---
 
