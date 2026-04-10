@@ -7,7 +7,6 @@ export default function Leetcode() {
     async function fetchStats() {
       const res = await fetch("https://leetcode-stats.tashif.codes/Saksham_lodha");
       const data = await res.json();
-      console.log(data);
       setStats(data);
     }
 

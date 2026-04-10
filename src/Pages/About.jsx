@@ -34,7 +34,7 @@ export default function About(){
 
     <section id="about" >
        
-<div className="flex flex-col md:flex-row items-center md:items-stretch justify-between py-10 px-4 sm:px-6 gap-6 md:gap-8 bg-black/85 pointer-events-none" >  
+<div className="flex flex-col md:flex-row items-center md:items-stretch justify-between py-10 px-4 sm:px-6 gap-6 md:gap-8 bg-black/85" >  
                 <div ref={picRef} className="w-full md:w-1/2">
                 <img
                     className="rounded-2xl w-full"
