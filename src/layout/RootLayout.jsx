@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Snowfall from "react-snowfall";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../Pages/Header";
+import Footer from "../Pages/Footer";
 
 export default function RootLayout() {
   return (

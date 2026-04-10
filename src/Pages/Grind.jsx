@@ -1,6 +1,6 @@
-import Github from "../components/Github"
+import Github from "./Github"
 
-import Leetcode from "../components/Leetcode"
+import Leetcode from "./Leetcode"
 export default function Grind(){
     return(<>
     <section id="grind">
