@@ -75,6 +75,7 @@ export default function Home(){
                         </button>
                         
                         <button 
+                        onClick={() => window.open("/SAKSHAM_LODHA_RESUME.pdf", "_blank")}
                             className="transition-transform duration-300 hover:-translate-y-1 sm:mx-6 px-5 sm:px-7 py-2 rounded-xl cursor-pointer gap-8 border-2 border-gray-700 text-white font-semibold opacity-100 shadow-lg bg-black/85 text-sm sm:text-base">Resume
                         </button>                    
                     </div>

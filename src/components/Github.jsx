@@ -8,7 +8,7 @@ export default function Github() {
         <span className="text-lg sm:text-xl font-semibold text-white">
             Github Activity
         </span>
-
+<></>
         <Link
             to="https://github.com/inflictt"
             className="px-3 py-1.5 text-xs sm:text-sm font-normal text-white bg-gray-800 rounded-xl border border-gray-700 hover:bg-gray-700 transition w-fit"

@@ -6,7 +6,7 @@ import Achievements from "./Achievements"
 import Contact from "./Contact"
 import BlogOverview from "./BlogOverview"
 import MyPlayer from "./MyPlayer"
-import TechMarquee from "./TechMarquee";
+import TechMarquee from "../components/TechMarquee";
 export default function Portfolio(){
     return (
         <>
