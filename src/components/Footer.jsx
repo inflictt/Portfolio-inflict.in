@@ -32,20 +32,17 @@ export default function Footer() {
 
                     {/* Identity */}
                     <div className="flex items-center gap-4 px-20">
-                        <div><img className="w-16 h-16 rounded-full  flex items-center justify-center  ring-1"
+                        <div><img className="w-16 h-16 rounded-full  flex items-center justify-center ring-1"
                             src={saksham} alt="" />
                         </div>
                         <div className="flex flex-col gap-1">
                             <h2 className="text-2xl font-semibold text-white tracking-tight leading-tight">
-                                saksham lodha
+                                Saksham Lodha
                             </h2>
                             <p className="text-xs text-gray-400">
-                                full stack developer · delhi → world
+                                Full Stack Developer · India → World
                             </p>
-                            <div className=" inline-flex items-center gap-1.5 px-2.5 py-0.5 border border-teal-400/40 bg-teal-400/5 rounded-full text-[10px] text-teal-400 w-fit mt-1">
-                                <span className="w-1.5 h-1.5 rounded-full bg-teal-400 shadow-[0_0_6px_rgba(45,212,191,0.7)]"></span>
-                                available for work
-                            </div>
+
                         </div>
                     </div>
 
@@ -55,10 +52,10 @@ export default function Footer() {
                     {/* Tagline */}
                     <div className="max-w-sm">
                         <h3 className="text-base font-medium text-white mb-2 leading-tight ">
-                            thanks for scrolling this far.
+                            Thanks for scrolling this far.
                         </h3>
                         <p className="text-sm text-gray-400 leading-relaxed">
-                            i build things on the internet. occasionally they work. always they teach me something.
+                            I build things on the internet. Occasionally they work & always they teach me something.
                         </p>
                     </div>
 

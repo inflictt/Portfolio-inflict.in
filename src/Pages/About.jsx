@@ -36,7 +36,7 @@ export default function About() {
 
             <div className="flex flex-col md:flex-row items-center md:items-stretch justify-between py-10 px-4 sm:px-6 gap-6 md:gap-8 bg-black/85" >
                 <div ref={picRef}
-                    className=" w-75 h-75 rounded-3xl
+                    className=" w-56 h-56 sm:w-64 sm:h-64 md:w-75 md:h-75 rounded-3xl
                             bg-[radial-gradient(circle_at_35%_30%,#1a3a52_0%,#0a1825_70%)]
                             border border-teal-400/25
                             shadow-[0_0_60px_rgba(61,219,198,0.12),0_0_120px_rgba(125,78,212,0.08),inset_0_0_40px_rgba(0,0,0,0.3),inset_0_20px_40px_rgba(61,219,198,0.05)]
@@ -48,7 +48,7 @@ export default function About() {
                 </div>
                 <div
 
-                    className="flex-2 text-left rounded-2xl pb-3 md:pl-4 flex flex-col w-full md:w-1/2">
+                    className="flex-1 text-left rounded-2xl pb-3 md:pl-4 flex flex-col w-full md:w-1/2">
                     <p className="text-md text-teal-500">About </p>
                     <p className="text-2xl sm:text-3xl italic ">Me</p>
                     <br></br>

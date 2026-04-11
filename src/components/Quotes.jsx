@@ -65,27 +65,33 @@ export default function Quotes() {
     const item = data[btnClickCount]; // pick the current one
 
 
-    return (<section className="pb-12">
+    return (
+        <section className="pb-12 px-4 sm:px-6">
+            <div className="bg-[#252a29] border border-[#152524] p-4 sm:p-6 md:p-8 w-full rounded-2xl flex flex-col sm:flex-row items-center gap-4 sm:gap-6 md:gap-10 opacity-80 transition-opacity duration-800">
 
+                <img
+                    className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full object-cover shrink-0"
+                    src={item.Icon}
+                    alt={item.artist}
+                />
 
-        <div
+                <div className="flex flex-col flex-1 px-1 sm:px-3 pt-2 text-center sm:text-left">
+                    <p className="text-sm sm:text-base md:text-lg font-semibold leading-relaxed">
+                        "{item.quote}"
+                    </p>
+                    <p className="text-xs sm:text-sm md:text-base text-gray-400 mt-2">
+                        - {item.artist}
+                    </p>
+                </div>
 
-            className="bg-[#252a29] border border-[#152524]  p-8 h-36 w-full  rounded-2xl   flex items-center gap-10 opacity-80 transition-opacity duration-800">
-
-            <img className="w-24 h-24 rounded-full object-cover" src={item.Icon}
-                alt={item.artist} />
-
-
-            <div className="flex flex-col flex-1 px-3 pt-2">
-                <p className="text-lg font-semibold">"{item.quote}"</p>
-                <p className="text-md text-gray-400 mt-2">- {item.artist}</p>
+                <button
+                    className="cursor-pointer hover:text-teal-700 text-xs sm:text-sm shrink-0"
+                    onClick={handleQuotesChange}
+                    type="button"
+                >
+                    Change
+                </button>
             </div>
-            <button
-                className="cursor-pointer hover:text-teal-700"
-                onClick={handleQuotesChange}
-                type="button">Change</button>
-        </div>
-
-
-    </section>)
+        </section>
+    );
 }

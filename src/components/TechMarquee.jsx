@@ -29,7 +29,7 @@ export default function TechMarquee() {
     <section className="py-6 bg-black text-white border-y border-cyan-400/20">
 
       <Marquee speed={80} pauseOnHover gradient={false}>
-        <div className="flex gap-16 text-lg font-semibold">
+        <div className="flex gap-8 sm:gap-12 md:gap-16  text-base sm:text-lg font-semibold">
           {techs.map(({ name, Icon, color }) => (
             <span key={name} className="flex items-center gap-3 mx-8">
               <Icon size={28} style={{ color }} />
