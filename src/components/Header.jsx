@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { MdDarkMode } from "react-icons/md";
-import profilePic from "../assets/Saksham2.jpg";
+import profilePic from "../assets/front-inflict.jpg";
 import { useState } from "react";
 import { IoSunnyOutline } from "react-icons/io5";
 

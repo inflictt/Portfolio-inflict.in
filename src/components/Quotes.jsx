@@ -41,7 +41,7 @@ export default function Quotes() {
         },
         {
             id: 5,
-            artist: "KR$NA",
+            artist: "Badshah",
             quote: "I lie with the lions and I roam with the elephants",
             Icon: badshah
         },
@@ -59,7 +59,7 @@ export default function Quotes() {
     )
 
     const handleQuotesChange = (e) => {
-        setBtnClickCount((btnClickCount + 1) % 4)
+        setBtnClickCount((btnClickCount + 1) % data.length)
 
     }
     const item = data[btnClickCount]; // pick the current one
