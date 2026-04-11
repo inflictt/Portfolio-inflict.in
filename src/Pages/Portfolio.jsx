@@ -5,15 +5,15 @@ import Grind from "./Grind"
 import Achievements from "./Achievements"
 import Contact from "./Contact"
 import BlogOverview from "./BlogOverview"
-import MyPlayer from "./MyPlayer"
 import TechMarquee from "../components/TechMarquee";
+import Quotes from "../components/Quotes"
 export default function Portfolio(){
     return (
         <>
         <Home />
-        <TechMarquee/>
+        <Quotes />
         <About />
-
+        <TechMarquee/>
         {/* <Projects /> */}
         <Grind />
         {/* <Achievements /> */}

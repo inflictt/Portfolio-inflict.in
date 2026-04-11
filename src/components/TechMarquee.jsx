@@ -27,6 +27,7 @@ const techs = [
 export default function TechMarquee() {
   return (
     <section className="py-6 bg-black text-white border-y border-cyan-400/20">
+
       <Marquee speed={80} pauseOnHover gradient={false}>
         <div className="flex gap-16 text-lg font-semibold">
           {techs.map(({ name, Icon, color }) => (

@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { MdDarkMode } from "react-icons/md";
-import profilePic from "../assets/Saksham.jpg";
+import profilePic from "../assets/Saksham2.jpg";
 import { useState } from "react";
 import { IoSunnyOutline } from "react-icons/io5";
 
@@ -14,10 +14,10 @@ const NAV_LINKS = [
 ];
 
 export default function Header() {
-    const [mode,setMode] = useState(0)
-    const handleModeChange = (mode) =>{
-        setMode(mode+1)
-    }
+  const [mode, setMode] = useState(0)
+  const handleModeChange = (mode) => {
+    setMode(mode + 1)
+  }
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -27,7 +27,7 @@ export default function Header() {
 
   return (
     <header className="left-0 right-0 mx-auto fixed z-999 mt-2 rounded-4xl max-w-[95%] sm:max-w-6xl flex items-center gap-10 justify-between p-2 sm:p-3 bg-gray-700/30 backdrop-blur-md">
-      
+
       {/* Left Logo */}
       <NavLink to="/" className="flex flex-row items-center gap-2 sm:gap-3 justify-center shrink-0">
         <img
@@ -36,7 +36,7 @@ export default function Header() {
           alt="profile"
         />
         <h4 className="text-white text-sm sm:text-base hidden sm:block">Saksham</h4>
-       
+
       </NavLink>
 
       {/* Right Nav Links */}

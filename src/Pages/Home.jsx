@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { useRef } from "react";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-import profilePic from "../assets/Saksham.jpg";
-import { MdDarkMode } from "react-icons/md";
+
 import spiritImg from "../assets/saksham-sprite.svg"
+
 import { RiTwitterXLine } from "react-icons/ri";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -37,8 +38,7 @@ export default function Home(){
         {role:"Frontend Learner",id:0},
         {role:"MERN Developer",id:1},
         {role:"Django Developer",id:2},
-        {role:"Backend Enthusiast",id:3},
-        {role:"Gamer",id:4}
+        {role:"Backend Enthusiast",id:3}
         ];
     const [currId,setCurrId] = useState(0)
 
