@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import profilePic from "../assets/Saksham.png";
+import profilePic from "../assets/Saksham.jpg";
 import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
