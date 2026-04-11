@@ -35,7 +35,7 @@ export default function About(){
     <section id="about" >
        
 <div className="flex flex-col md:flex-row items-center md:items-stretch justify-between py-10 px-4 sm:px-6 gap-6 md:gap-8 bg-black/85" >  
-                <div ref={picRef} className="w-full md:w-1/2">
+                <div ref={picRef} className="bg-gradient-to-r from-[#49a09d] to-[#6a4086] rounded-full w-full md:w-[33%]">
                 <img
                     className="rounded-2xl w-full"
                     src={profilePic} 
@@ -43,7 +43,7 @@ export default function About(){
                 </div>
                 <div
                 
-                className="text-left rounded-2xl pb-3 md:pl-4 flex flex-col w-full md:w-1/2">
+                className="flex-2 text-left rounded-2xl pb-3 md:pl-4 flex flex-col w-full md:w-1/2">
                     <p className="text-md text-teal-500">About </p>
                     <p className="text-2xl sm:text-3xl italic ">Me</p>
                     <br></br>
