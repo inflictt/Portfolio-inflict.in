@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useRef } from "react";
+import { CiLocationArrow1 } from "react-icons/ci";
+import { IoIosCloudDownload } from "react-icons/io";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -70,13 +72,18 @@ export default function Home() {
                         onClick={() => {
                             document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
                         }}
-                        className="transition-transform duration-300 hover:-translate-y-1 px-5 sm:px-7 py-2 rounded-xl cursor-pointer bg-linear-to-r from-cyan-400 to-teal-600 text-black font-semibold gap-9 shadow-lg text-sm sm:text-base">
-                        Contact
+                        className="inline-flex items-center  transition-transform duration-300 hover:-translate-y-1 px-5 sm:px-7 py-2 rounded-xl cursor-pointer bg-linear-to-r from-cyan-400 to-teal-600 text-black font-semibold gap-1 shadow-lg text-sm sm:text-base">
+                        Let's Talk <CiLocationArrow1 />
+
+
                     </button>
 
                     <button
                         onClick={() => window.open("/SAKSHAM_LODHA_RESUME.pdf", "_blank")}
-                        className="transition-transform duration-300 hover:-translate-y-1 sm:mx-6 px-5 sm:px-7 py-2 rounded-xl cursor-pointer gap-8 border-2 border-gray-700 text-white font-semibold opacity-100 shadow-lg bg-black/85 text-sm sm:text-base">Resume
+                        className="inline-flex items-center transition-transform duration-300 hover:-translate-y-1 sm:mx-6 px-5 sm:px-7 py-2 rounded-xl cursor-pointer gap-1 border-2 border-gray-700 text-white font-semibold opacity-100 shadow-lg bg-black/85 text-sm sm:text-base">
+                        Resume <IoIosCloudDownload />
+
+
                     </button>
                 </div>
                 <div className="flex items-center justify-center lg:justify-start gap-3 sm:gap-4 bg-black/75">

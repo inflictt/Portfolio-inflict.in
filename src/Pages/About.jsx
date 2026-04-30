@@ -49,8 +49,9 @@ export default function About() {
                 <div
 
                     className="flex-1 text-left rounded-2xl pb-3 md:pl-4 flex flex-col w-full md:w-1/2">
-                    <p className="text-md text-teal-500">About </p>
-                    <p className="text-2xl sm:text-3xl italic ">Me</p>
+                    <p className="text-md text-teal-500">About  </p>
+                    <p className="text-2xl sm:text-3xl  ">Curious by default ,
+                        <span className="text-md text-teal-500 italic"> builder</span> by craft.</p>
                     <br></br>
                     <p className=" text-gray-300 text-sm sm:text-base">I started coding in my first year just because I wanted to build things that actually worked, and it kind of stuck with me ever since. These days I mostly work with React, Node, and Django, and I like playing around with AI tools to see what I can make with them. <br /></p>
                     <p className="pt-2 text-sm sm:text-base">

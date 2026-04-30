@@ -26,18 +26,37 @@ const techs = [
 
 export default function TechMarquee() {
   return (
-    <section className="py-6 bg-black text-white border-y border-cyan-400/20">
+    <div>
+      <p className="text-md  text-teal-500 text-2xl"> - Tech Stack  </p>
+      <div className="w-1/2">
+        <div className="text-md font-bold text-6xl p-2">What I work with</div>
+        <div className="text-md text-gray-500  text-xl p-2">A pragmatic stack — boring where it pays, novel where it earns its weight.</div>
+      </div>
 
-      <Marquee speed={80} pauseOnHover gradient={false}>
-        <div className="flex gap-8 sm:gap-12 md:gap-16  text-base sm:text-lg font-semibold">
-          {techs.map(({ name, Icon, color }) => (
-            <span key={name} className="flex items-center gap-3 mx-8">
-              <Icon size={28} style={{ color }} />
-              {name}
-            </span>
-          ))}
-        </div>
-      </Marquee>
-    </section>
+      <section className="py-6 bg-black text-white  ">
+        <Marquee speed={80} pauseOnHover gradient={false}>
+          <div className="flex gap-8 sm:gap-12 md:gap-16  text-base sm:text-lg font-semibold ">
+            {techs.map(({ name, Icon, color }) => (
+              <span key={name} className="flex items-center  gap-3 mx-8 border border-gray-500 bg-gray-100/10 rounded-4xl p-3">
+                <Icon size={28} style={{ color }} />
+                {name}
+              </span>
+            ))}
+          </div>
+        </Marquee>
+
+        <Marquee speed={80} pauseOnHover grad ient={false} direction="right">
+          <div className="flex gap-8 py-5 sm:gap-12 md:gap-16  text-base sm:text-lg font-semibold ">
+            {techs.map(({ name, Icon, color }) => (
+              <span key={name} className="flex items-center  gap-3 mx-8 border border-gray-500 bg-gray-100/10 rounded-4xl p-3">
+                <Icon size={28} style={{ color }} />
+                {name}
+              </span>
+            ))}
+          </div>
+        </Marquee>
+
+      </section>
+    </div>
   );
 }
