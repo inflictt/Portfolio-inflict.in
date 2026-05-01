@@ -35,22 +35,10 @@ export default function Quotes() {
         },
         {
             id: 4,
-            artist: "KR$NA",
-            quote: "Hota tha heart of gold, ab heart hai cold, just like the shoulders I used to get",
-            Icon: krsna
-        },
-        {
-            id: 5,
             artist: "Badshah",
             quote: "I lie with the lions and I roam with the elephants",
             Icon: badshah
         },
-        {
-            id: 6,
-            artist: "King",
-            quote: "Pehle kitna darta tha, ab kisi se darta nahi",
-            Icon: king1
-        }
     ];
 
 

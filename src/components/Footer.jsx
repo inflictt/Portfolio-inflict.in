@@ -52,10 +52,10 @@ export default function Footer() {
                     {/* Tagline */}
                     <div className="max-w-sm">
                         <h3 className="text-base font-medium text-white mb-2 leading-tight ">
-                            Thanks for scrolling this far.
+                            Made it to the end.
                         </h3>
                         <p className="text-sm text-gray-400 leading-relaxed">
-                            I build things on the internet. Occasionally they work & always they teach me something.
+                            Every line on this site is something I wrote, broke, and rewrote. Thanks for taking the time — it means more than you'd think.
                         </p>
                     </div>
 
