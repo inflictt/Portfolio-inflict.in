@@ -54,26 +54,26 @@ export default function Quotes() {
 
 
     return (
-        <section className="pb-9 px-2 sm:px-4">
-            <div className="bg-[#252a29] border border-[#152524] h-32 p-4 sm:p-6 md:p-8 w-full rounded-2xl flex flex-col sm:flex-row items-center gap-4 sm:gap-6 md:gap-10 opacity-80 transition-opacity duration-800">
+        <section className="pb-6 sm:pb-9 px-3 sm:px-4 md:px-6">
+            <div className="bg-[#252a29] border border-[#152524] min-h-32 p-3 sm:p-5 md:p-6 lg:p-8 w-full rounded-2xl flex flex-col sm:flex-row items-center gap-3 sm:gap-5 md:gap-8 lg:gap-10 opacity-80 transition-opacity duration-800">
 
                 <img
-                    className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full object-cover shrink-0"
+                    className="w-14 h-14 sm:w-18 sm:h-18 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full object-cover shrink-0"
                     src={item.Icon}
                     alt={item.artist}
                 />
 
-                <div className="flex flex-col flex-1 px-1 sm:px-3 pt-2 text-center sm:text-left">
-                    <p className="text-sm sm:text-base md:text-lg font-semibold leading-relaxed">
+                <div className="flex flex-col flex-1 px-1 sm:px-2 md:px-3 pt-1 sm:pt-2 text-center sm:text-left min-w-0">
+                    <p className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold leading-relaxed">
                         "{item.quote}"
                     </p>
-                    <p className="text-xs sm:text-sm md:text-base text-gray-400 mt-2">
+                    <p className="text-xs sm:text-sm md:text-base text-gray-400 mt-1.5 sm:mt-2">
                         - {item.artist}
                     </p>
                 </div>
 
                 <button
-                    className="cursor-pointer hover:text-teal-700 text-xs sm:text-sm shrink-0"
+                    className="cursor-pointer hover:text-teal-700 text-xs sm:text-sm shrink-0 px-3 py-1.5 sm:px-0 sm:py-0 border border-gray-700 sm:border-0 rounded-full sm:rounded-none"
                     onClick={handleQuotesChange}
                     type="button"
                 >

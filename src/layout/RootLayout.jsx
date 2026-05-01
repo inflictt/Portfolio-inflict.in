@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 export default function RootLayout() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-black text-white overflow-x-hidden">
       <Snowfall
         color="#ffffff"
         snowflakeCount={150}
@@ -19,8 +19,8 @@ export default function RootLayout() {
       />
 
       {/* Main centered wrapper */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  border-l border-r  border-amber-50/25">
-        <Header   />
+      <div className="relative z-10 max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 sm:border-l sm:border-r border-amber-50/25">
+        <Header />
         <Outlet />
         <Footer />
       </div>

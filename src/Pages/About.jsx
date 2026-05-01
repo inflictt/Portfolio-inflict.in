@@ -54,7 +54,7 @@ export default function About() {
                 <div
 
                     className="flex-1 text-left rounded-2xl pb-3 md:pl-4 flex flex-col w-full md:w-1/2">
-                    <p className="text-md  text-teal-500 text-2xl">- About  </p>
+                    <p className="text-md text-teal-500">- About  </p>
                     <p className="text-md font-bold text-4xl p-2   ">Curious by default ,
                         <span className="text-md text-teal-500 italic"> builder</span> by craft.</p>
                     <br></br>

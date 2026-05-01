@@ -28,15 +28,15 @@ export default function Footer() {
 
             <div className="bg-black border-t border-zinc-900">
 
-                <div className="grid grid-cols-[auto_1fr_auto] gap-8 items-center py-12">
+                <div className="grid grid-cols-1 md:grid-cols-[auto_1fr_auto] gap-6 md:gap-8 items-center py-8 sm:py-10 md:py-12 px-4 sm:px-6 md:px-0">
 
                     {/* Identity */}
-                    <div className="flex items-center gap-4 px-20">
-                        <div><img className="w-16 h-16 rounded-full  flex items-center justify-center ring-1"
+                    <div className="flex items-center justify-center md:justify-start gap-4 md:px-12 lg:px-20">
+                        <div><img className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center ring-1"
                             src={saksham} alt="" />
                         </div>
                         <div className="flex flex-col gap-1">
-                            <h2 className="text-2xl font-semibold text-white tracking-tight leading-tight">
+                            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-white tracking-tight leading-tight">
                                 Saksham Lodha
                             </h2>
                             <p className="text-xs text-gray-400">
@@ -46,11 +46,11 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Vertical divider */}
-                    <div className="w-px h-20 mx-auto bg-linear-to-b from-transparent via-teal-400/40 to-transparent"></div>
+                    {/* Vertical divider — hidden on mobile (stacked layout) */}
+                    <div className="hidden md:block w-px h-20 mx-auto bg-linear-to-b from-transparent via-teal-400/40 to-transparent"></div>
 
                     {/* Tagline */}
-                    <div className="max-w-sm">
+                    <div className="max-w-sm text-center md:text-left mx-auto md:mx-0 px-2 sm:px-0">
                         <h3 className="text-base font-medium text-white mb-2 leading-tight ">
                             Made it to the end.
                         </h3>
@@ -60,10 +60,10 @@ export default function Footer() {
                     </div>
 
                 </div>
-                <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-8 flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6">
 
                     {/* LEFT: copyright + visitor */}
-                    <div className="flex flex-col sm:flex-row items-center gap-4 text-xs sm:text-sm text-gray-600">
+                    <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-600 text-center sm:text-left">
                         <span>
                             © 2026. All rights reserved{" "}
                             <span className="text-teal-300">Saksham Lodha</span>
@@ -75,30 +75,30 @@ export default function Footer() {
                     </div>
 
                     {/* RIGHT: coffee button + socials */}
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-3 sm:gap-4">
 
 
-                        <div className="flex items-center gap-3">
+                        <div className="flex items-center gap-2 sm:gap-3">
                             {socials.map(({ id, Icon, url, label }) => (
                                 <button
                                     key={id}
                                     onClick={() => window.open(url, "_blank")}
                                     aria-label={label}
-                                    className="cursor-pointer rounded-full p-3 border border-gray-900 text-gray-600 hover:text-teal-300 hover:border-teal-400/40 hover:-translate-y-1 transition-all"
+                                    className="cursor-pointer rounded-full p-2.5 sm:p-3 border border-gray-900 text-gray-600 hover:text-teal-300 hover:border-teal-400/40 hover:-translate-y-1 transition-all"
                                 >
-                                    <Icon className="text-lg" />
+                                    <Icon className="text-base sm:text-lg" />
                                 </button>
                             ))}
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center items-center" >
+            <div className="flex justify-center items-center overflow-hidden px-2" >
 
-                <p className="text-7xl sm:text-9xl lg:text-[180px] font-extrabold tracking-tight 
-                bg-gradient-to-b from-gray-600 to-black 
+                <p className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[180px] font-extrabold tracking-tight 
+                bg-linear-to-b from-gray-600 to-black 
                 bg-clip-text text-transparent 
-                select-none leading-none">
+                select-none leading-none break-all">
                     SAKSHAM
                 </p>
 

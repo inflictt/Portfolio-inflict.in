@@ -26,19 +26,19 @@ const techs = [
 
 export default function TechMarquee() {
   return (
-    <div>
-      <p className="text-md  text-teal-500 text-2xl"> - Tech Stack  </p>
-      <div className="w-1/2">
-        <div className="text-md font-bold text-6xl p-2">What I work with</div>
-        <div className="text-md text-gray-500  text-xl p-2">A pragmatic stack, boring where it pays, novel where it earns its weight.</div>
+    <div className="px-4 sm:px-6 md:px-8 py-6 sm:py-8">
+      <p className="text-base sm:text-lg md:text-2xl text-teal-500"> - Tech Stack  </p>
+      <div className="w-full md:w-2/3 lg:w-1/2">
+        <div className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl p-1 sm:p-2 leading-tight">What I work with</div>
+        <div className="text-gray-500 text-sm sm:text-base md:text-lg lg:text-xl p-1 sm:p-2">A pragmatic stack, boring where it pays, novel where it earns its weight.</div>
       </div>
 
-      <section className="py-6 bg-black text-white  ">
+      <section className="py-4 sm:py-6 bg-black text-white">
         <Marquee speed={80} pauseOnHover gradient={false}>
-          <div className="flex gap-8 sm:gap-12 md:gap-16  text-base sm:text-lg font-semibold ">
+          <div className="flex gap-4 sm:gap-8 md:gap-12 lg:gap-16 text-sm sm:text-base md:text-lg font-semibold ">
             {techs.map(({ name, Icon, color }) => (
-              <span key={name} className="flex items-center  gap-3 mx-8 border border-gray-500 bg-gray-100/10 rounded-4xl p-3">
-                <Icon size={28} style={{ color }} />
+              <span key={name} className="flex items-center gap-2 sm:gap-3 mx-3 sm:mx-6 md:mx-8 border border-gray-500 bg-gray-100/10 rounded-3xl sm:rounded-4xl p-2 sm:p-3 whitespace-nowrap">
+                <Icon size={22} className="sm:w-7 sm:h-7" style={{ color }} />
                 {name}
               </span>
             ))}
@@ -46,10 +46,10 @@ export default function TechMarquee() {
         </Marquee>
 
         <Marquee speed={80} pauseOnHover grad ient={false} direction="right">
-          <div className="flex gap-8 py-5 sm:gap-12 md:gap-16  text-base sm:text-lg font-semibold ">
+          <div className="flex gap-4 py-3 sm:py-5 sm:gap-8 md:gap-12 lg:gap-16 text-sm sm:text-base md:text-lg font-semibold ">
             {techs.map(({ name, Icon, color }) => (
-              <span key={name} className="flex items-center  gap-3 mx-8 border border-gray-500 bg-gray-100/10 rounded-4xl p-3">
-                <Icon size={28} style={{ color }} />
+              <span key={name} className="flex items-center gap-2 sm:gap-3 mx-3 sm:mx-6 md:mx-8 border border-gray-500 bg-gray-100/10 rounded-3xl sm:rounded-4xl p-2 sm:p-3 whitespace-nowrap">
+                <Icon size={22} className="sm:w-7 sm:h-7" style={{ color }} />
                 {name}
               </span>
             ))}
