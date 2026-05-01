@@ -30,7 +30,7 @@ export default function TechMarquee() {
       <p className="text-md  text-teal-500 text-2xl"> - Tech Stack  </p>
       <div className="w-1/2">
         <div className="text-md font-bold text-6xl p-2">What I work with</div>
-        <div className="text-md text-gray-500  text-xl p-2">A pragmatic stack — boring where it pays, novel where it earns its weight.</div>
+        <div className="text-md text-gray-500  text-xl p-2">A pragmatic stack, boring where it pays, novel where it earns its weight.</div>
       </div>
 
       <section className="py-6 bg-black text-white  ">

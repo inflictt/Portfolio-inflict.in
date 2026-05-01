@@ -54,8 +54,8 @@ export default function Quotes() {
 
 
     return (
-        <section className="pb-12 px-4 sm:px-6">
-            <div className="bg-[#252a29] border border-[#152524] p-4 sm:p-6 md:p-8 w-full rounded-2xl flex flex-col sm:flex-row items-center gap-4 sm:gap-6 md:gap-10 opacity-80 transition-opacity duration-800">
+        <section className="pb-9 px-2 sm:px-4">
+            <div className="bg-[#252a29] border border-[#152524] h-32 p-4 sm:p-6 md:p-8 w-full rounded-2xl flex flex-col sm:flex-row items-center gap-4 sm:gap-6 md:gap-10 opacity-80 transition-opacity duration-800">
 
                 <img
                     className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full object-cover shrink-0"
