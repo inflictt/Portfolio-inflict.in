@@ -55,7 +55,7 @@ export default function Footer() {
                             Made it to the end.
                         </h3>
                         <p className="text-sm text-gray-400 leading-relaxed">
-                            Every line on this site is something I wrote, broke, and rewrote. Thanks for taking the time — it means more than you'd think.
+                            Every line on this site is something I wrote, broke, and rewrote. Thanks for taking the time, it means more than you'd think.
                         </p>
                     </div>
 

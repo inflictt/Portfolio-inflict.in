@@ -1,4 +1,7 @@
+import { CiLocationArrow1 } from "react-icons/ci";
 import { NavLink } from "react-router-dom";
+import { MdOutlineArrowOutward } from "react-icons/md";
+
 import { MdDarkMode } from "react-icons/md";
 import profilePic from "../assets/front-inflict.jpg";
 import { useState } from "react";
@@ -50,7 +53,15 @@ export default function Header() {
             {label}
           </button>
         ))}
+        <button
+          onClick={() => {
+            document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+          }}
+          className="inline-flex items-center px-7 sm:px-3 py-1 rounded-3xl cursor-pointer bg-teal-300 text-black gap-1 shadow-lg text-sm sm:text-base">
+          Hire me <MdOutlineArrowOutward />
 
+
+        </button>
         {/* <NavLink 
             className={({isActive})=>`block py-2 pr-2 sm:pr-4 pl-1 sm:pl-3 text-xs sm:text-sm md:text-base whitespace-nowrap transition-colors duration-200 ${
                     isActive

@@ -49,7 +49,7 @@ export default function About() {
                 <div
 
                     className="flex-1 text-left rounded-2xl pb-3 md:pl-4 flex flex-col w-full md:w-1/2">
-                    <p className="text-md text-teal-500">About  </p>
+                    <p className="text-md text-teal-500">- About  </p>
                     <p className="text-2xl sm:text-3xl  ">Curious by default ,
                         <span className="text-md text-teal-500 italic"> builder</span> by craft.</p>
                     <br></br>
