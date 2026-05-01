@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 import { MdDarkMode } from "react-icons/md";
-import profilePic from "../assets/front-inflict.jpg";
+import profilePic from "../assets/front-inflict.webp";
 import { useState } from "react";
 import { IoSunnyOutline } from "react-icons/io5";
 

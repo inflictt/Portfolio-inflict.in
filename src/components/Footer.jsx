@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 
-import saksham from "../assets/front-inflict.jpg";
+import saksham from "../assets/front-inflict.webp";
 
 export default function Footer() {
     const [visitorCount, setVisitorCount] = useState(null);
