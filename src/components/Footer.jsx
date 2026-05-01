@@ -91,9 +91,19 @@ export default function Footer() {
                             ))}
                         </div>
                     </div>
-
                 </div>
             </div>
+            <div className="flex justify-center items-center" >
+
+                <p className="text-7xl sm:text-9xl lg:text-[180px] font-extrabold tracking-tight 
+                bg-gradient-to-b from-gray-600 to-black 
+                bg-clip-text text-transparent 
+                select-none leading-none">
+                    SAKSHAM
+                </p>
+
+            </div>
+
         </footer >
     );
 }
