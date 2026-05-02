@@ -10,8 +10,9 @@ import { IoSunnyOutline } from "react-icons/io5";
 const NAV_LINKS = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
-  // { id: "projects", label: "Projects" },
+  { id: "projects", label: "Projects" },
   { id: "grind", label: "Grind" },
+  { id: "journey", label: "Journey" },
   // { id: "achievements", label: "Achievements" },
   { id: "contact", label: "Contact" },
 ];

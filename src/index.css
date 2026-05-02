@@ -14,7 +14,14 @@ html, body {
   background: #000000;
   min-height: 100vh;
 }
-
+.your-deck {
+  --photo-deck-font: "Poppins", cursive;
+  --photo-deck-caption-font-size: 1.2rem;
+}
+/* add in your css */
+.your-deck > * {
+  transform: translateX(calc(var(--index) * 80px)) !important;
+}
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
