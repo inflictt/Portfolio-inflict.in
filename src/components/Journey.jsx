@@ -97,7 +97,7 @@ export default function Journey() {
       <div className="text-center text-[12px] font-semibold tracking-[0.14em] opacity-55">JOURNEY</div>
       <h2 className="mt-3 mb-12 text-center font-normal text-[clamp(36px,4.6vw,64px)] leading-none tracking-tight"
           style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}>
-        Three years, few <em className="italic">chapters</em>.
+        Past years, few <em className="italic">chapters</em>.
       </h2>
 
       <div ref={tlRef} className="relative max-w-[980px] mx-auto pt-4 pb-2">

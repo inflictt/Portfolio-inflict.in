@@ -57,16 +57,16 @@ export const PROJECTS = [
 
 export const CHAPTERS = [
   { num: "", title: "Class 10 - St. Paul’s School", meta: "2022 · 90% CBSE", img: "/assets/ten.webp",
-    body: "Where the discipline started - a 90% board result and the first taste of doing things properly." },
-  { num: "", title: "Class 12 - Central Public School", meta: "2024 · CBSE", img: "/assets/cps.webp",
-    body: "Senior secondary done - and the decision made: build things for a living." },
+    body: "" },
+  { num: "", title: "Class 12 - Central Public School", meta: "2024 · 70% CBSE", img: "/assets/cps.webp",
+    body: "" },
   { num: "", title: "B.Tech CSE - BML Munjal University", meta: "2024-2028 · CGPA 8.48", img: "/assets/bml.webp",
-    body: "Started coding in first year to build things that actually work - it stuck." },
+    body: " " },
   { num: "", title: "TechStorm Hackathon - built Ashrafi", meta: "2024 · 3rd place", img: "/assets/team.webp",
     body: "Whiteboard to working demo in one night - and it survived the judges." },
-  { num: "", title: "45-Day SDE Sheet - Striver Challenge", meta: "2026 · Public accountability", img: "/assets/45Days.webp",
+  { num: "", title: "45-Day SDE Sheet - Striver Challenge", meta: "2026 · June-July ", img: "/assets/45Days.webp",
     href: "https://github.com/inflictt/45-DaySDESheetChallenge-Striver",
-    body: "Striver's SDE sheet taken as a 45-day public challenge, with solutions pushed to GitHub every single day." },
+    body: "Striver's SDE sheet taken as a 45-day public challenge, with solutions pushed to GitHub." },
   { num: "", title: "SneakPeak - I&E Compendium", meta: "2026 · Recognition", img: "/assets/snp.webp",
     body: "The sneaker marketplace that made it into the university’s Innovation & Entrepreneurship Compendium." },
 ];
@@ -75,8 +75,8 @@ export const CHAPTERS = [
 export const EXPERIENCE = [
   { role: "AI/ML Intern", org: "Kansoft Solutions", when: "MAY 2026 - JUL 2026",
     points: [
-      "Automated a 6 to 8 hour/week manual AWS cost-reporting workflow end to end, surfacing roughly 30% ($226 to 298/month) in potential cloud-cost savings for the organization.",
-      "Engineered data science and NLP workflows in Python (Pandas, NumPy) to clean, transform and analyze datasets into analysis-ready dataframes and actionable insights.",
+      "Automated a 6–8 hour/week manual AWS cost-reporting workflow end-to-end, delivering AI-generated cost reports with actionable cloud optimization recommendations.",
+      "Engineered data science and NLP workflows in Python to clean, transform and analyze datasets into analysis-ready dataframes and actionable insights.",
     ],
     project: { label: "Built end to end during this internship", title: "AI-FinOps: AWS Cost Intelligence Platform", href: "https://github.com/inflictt/Ai-Finops" } },
 ];

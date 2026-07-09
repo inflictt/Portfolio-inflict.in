@@ -142,7 +142,7 @@ export default function Contact() {
         <div className="flex items-center justify-between gap-3.5 flex-wrap mt-16 border-t border-[var(--line)] pt-4 text-[11px] font-medium tracking-[0.1em] opacity-55">
           <span>India · {time} IST</span>
           <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="font-semibold tracking-[0.1em] cursor-pointer hover:underline">BACK TO TOP ↑</button>
-          <span>© 2026 SAKSHAM LODHA · WWW.INFLICT.IN</span>
+          <span>© 2026 SAKSHAM LODHA</span>
         </div>
       </div>
     </section>

@@ -44,7 +44,7 @@ export default function Grind() {
 
   return (
     <section id="grind" className="relative z-[1] max-w-[1180px] mx-auto px-6 pb-32">
-      <div className="text-center text-[12px] font-semibold tracking-[0.14em] opacity-55">THE GRIND · SHOWING UP EVERY DAY</div>
+      <div className="text-center text-[12px] font-semibold tracking-[0.14em] opacity-55"> GRIND </div>
       <h2 className="mt-3 mb-11 text-center font-normal text-[clamp(36px,4.6vw,64px)] leading-none tracking-tight"
           style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}>
         Proof of <em className="italic">work</em>.

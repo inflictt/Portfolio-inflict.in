@@ -5,7 +5,7 @@ import { EXPERIENCE } from "../data.js";
 export default function Experience() {
   return (
     <section id="experience" className="relative z-[1] max-w-[980px] mx-auto px-6 pt-28 pb-8">
-      <div className="text-center text-[12px] font-semibold tracking-[0.14em] opacity-55">EXPERIENCE · SHIPPED IN THE REAL WORLD</div>
+      <div className="text-center text-[12px] font-semibold tracking-[0.14em] opacity-55">EXPERIENCE </div>
       <h2 className="mt-3 mb-10 text-center font-normal text-[clamp(34px,4.6vw,64px)] leading-none tracking-tight"
           style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}>
         Not just projects, <em className="italic">production</em>.

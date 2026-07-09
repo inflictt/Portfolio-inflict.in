@@ -49,12 +49,12 @@ export default function WorkDeck() {
       <div ref={stageRef} className="h-[600vh] relative -mt-2">
         <div className="sticky top-0 h-screen overflow-hidden flex flex-col">
           <div className="pt-24 shrink-0">
-            <div className="text-center text-[12px] font-semibold tracking-[0.14em] opacity-55">SELECTED WORK · 2024-2026</div>
+            <div className="text-center text-[12px] font-semibold tracking-[0.14em] opacity-55"> WORK </div>
             <h2 className="mt-3 mb-2.5 mx-auto max-w-[700px] text-center font-normal text-[clamp(40px,5.4vw,78px)] leading-none tracking-tight"
                 style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}>
               Things I’ve <em className="italic">shipped</em>, not just started.
             </h2>
-            <p className="text-center text-[13px] font-medium tracking-[0.06em] opacity-50">( HOVER A CARD · CLICK TO OPEN )</p>
+            {/* <p className="text-center text-[13px] font-medium tracking-[0.06em] opacity-50">( HOVER A CARD · CLICK TO OPEN )</p> */}
           </div>
 
           <div className="relative flex-1 min-h-0">
