@@ -107,6 +107,20 @@ npm run preview   # serve the build locally
 
 Deploy `dist/` to any static host.
 
+## Inspiration & credits
+
+Every effect was studied, then rebuilt from scratch. Ideas were drawn from:
+
+- [Podium](https://podium.global) - the ink-blob loading intro
+- [Deleito](https://quierodeleito.com) - the living cloud sky
+- [monx.dev](https://monxdev.vercel.app) - the circle theme sweep, cursor companion and filter tabs
+- P10 Architecture - the shutter-wipe project cards, evolved into the falling deck
+- FARMform - the scroll-drawn journey timeline
+- [Supersolid](https://www.supersolid.agency) and [Monolog](https://bymonolog.com) - overall tone, typography and layout language
+- [oneko](https://en.wikipedia.org/wiki/Neko_(software)) - the classic desktop cat that became Goku
+
+No code was taken from any of these. The shaders, animations and interactions in this repo are written by hand.
+
 ## Notes on the WebGL
 
 - One fragment shader draws both the full-screen background and the footer strip through a small `createSky()` factory.
