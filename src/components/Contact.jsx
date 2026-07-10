@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
+/* GA4 event helper: no-op if gtag is absent (e.g. ad blocker, local dev) */
+const track = (name) => window.gtag?.("event", name);
 
 /* Fill with your EmailJS keys (VITE_EMAILJS_* in .env also works) */
 const EMAILJS = {
@@ -130,11 +132,12 @@ export default function Contact() {
           </a>
         </div>
 
+        {/* socials: each click is a GA4 event */}
         <div className="flex justify-center flex-wrap gap-2.5 mt-9">
-          <a className={pill} href="https://x.com/Saksham1172975" target="_blank" rel="noopener">X / TWITTER ↗</a>
-          <a className={pill} href="https://www.linkedin.com/in/sakshamlodha" target="_blank" rel="noopener">LINKEDIN ↗</a>
-          <a className={pill} href="https://github.com/inflictt/" target="_blank" rel="noopener">GITHUB ↗</a>
-          <a className={pill} href="/assets/SAKSHAM_LODHA_RESUME.pdf" target="_blank" rel="noopener">
+          <a className={pill} href="https://x.com/Saksham1172975" target="_blank" rel="noopener" onClick={() => track("x_click")}>X / TWITTER ↗</a>
+          <a className={pill} href="https://www.linkedin.com/in/sakshamlodha" target="_blank" rel="noopener" onClick={() => track("linkedin_click")}>LINKEDIN ↗</a>
+          <a className={pill} href="https://github.com/inflictt/" target="_blank" rel="noopener" onClick={() => track("github_click")}>GITHUB ↗</a>
+          <a className={pill} href="/assets/SAKSHAM_LODHA_RESUME.pdf" target="_blank" rel="noopener" onClick={() => track("resume_download")}>
             <i className="w-[7px] h-[7px] rounded-full bg-[var(--lime)] border border-[var(--ink)]/35" />RESUME ↓
           </a>
         </div>
