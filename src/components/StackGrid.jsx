@@ -16,10 +16,10 @@ export default function StackGrid() {
   return (
     <section id="stack" className="relative z-[1] border-y border-[var(--line)] px-6 py-16">
       <div className="max-w-[1180px] mx-auto">
-        <div className="text-center text-[12px] font-semibold tracking-[0.14em] opacity-55">THE STACK · TOOLS I SHIP WITH</div>
+        <div className="text-center text-[12px] font-semibold tracking-[0.14em] opacity-55"> STACK · TOOLS I SHIP WITH</div>
         <h2 className="mt-3 text-center font-normal text-[clamp(40px,5.4vw,78px)] leading-none tracking-tight"
             style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}>
-          A full toolbox, zero <em className="italic">excuses</em>.
+          {/* A full toolbox, zero <em className="italic">excuses</em>. */}
         </h2>
 
         {/* filter tabs */}

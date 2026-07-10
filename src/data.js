@@ -56,7 +56,7 @@ export const PROJECTS = [
 ];
 
 export const CHAPTERS = [
-  { num: "", title: "Class 10 - St. Paul’s School", meta: "2022 · 90% CBSE", img: "/assets/ten.webp",
+  { num: "", title: "Class 10 - St. Paul’s School", meta: "2022 · 89% CBSE", img: "/assets/ten.webp",
     body: "" },
   { num: "", title: "Class 12 - Central Public School", meta: "2024 · 70% CBSE", img: "/assets/cps.webp",
     body: "" },

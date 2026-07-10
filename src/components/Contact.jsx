@@ -58,7 +58,14 @@ export default function Contact() {
         {/* two glass option cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 max-w-[820px] mx-auto mb-11">
           {[
-            { label: "", title: "Book a quick call", body: "Fifteen minutes, no deck required. I’ll audit your idea and tell you what I’d build first.", cta: "Share your number →", href: "mailto:realsaksham06@gmail.com?subject=Call%20request" },
+            // { label: "", title: "Book a quick call", body: "Fifteen minutes, no deck required. I’ll audit your idea and tell you what I’d build first.", cta: "Share your number →", href: "mailto:realsaksham06@gmail.com?subject=Call%20request" },
+            {
+  
+  title: "My journey",
+  body: "How I went from learning to code to building products, solving DSA, and sharing what I learn.",
+  cta: "Read more →",
+  href: "#about"
+},
             { label: "", title: "Email me directly", body: "Every message lands in my inbox, not a form void. I reply within a day.", cta: "Write to me →", href: "mailto:realsaksham06@gmail.com" },
           ].map((c) => (
             <div key={c.title} className={`${glassCard} p-7 flex flex-col items-start gap-2.5 text-left hover:-translate-y-1 transition-transform duration-500`}>
