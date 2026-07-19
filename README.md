@@ -2,7 +2,7 @@
 
 Personal developer portfolio of **Saksham Lodha**. Designed, broken and rebuilt by hand. No templates, no UI kits, no page builders.
 
-**Live:** [www.inflict.in](https://www.inflict.in)
+**Live:** [https://inflict.in/](Live)
 
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white&labelColor=20232a)
 ![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white&labelColor=20232a)
